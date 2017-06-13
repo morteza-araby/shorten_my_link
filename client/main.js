@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './components/header';
+
 const App = () => {
   return (
-    <h1>hello there!</h1>
+    <Header />
   );
 }
 

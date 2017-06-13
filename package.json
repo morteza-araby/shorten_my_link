@@ -2,7 +2,7 @@
   "name": "shorten_my_link",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
