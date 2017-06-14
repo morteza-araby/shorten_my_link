@@ -1,7 +1,6 @@
 import { Meteor } from 'meteor/meteor';
-
 import { Links } from '../imports/collections/links';
-
+import { WebApp } from 'meteor/webapp';
 
 Meteor.startup(() => {
   // code to run on server at startup
@@ -9,3 +8,6 @@ Meteor.startup(() => {
     return Links.find({});
   });
 });
+
+WebApp.connectHandlers
+  .use(req => console.log(req));
